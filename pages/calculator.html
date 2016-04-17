@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<!--
+* Author: Dermott McElhone
+*  Assignment:  Minor Project
+*  Student  ID: D15126568
+*  Date: 2016/04/11
+-->
+
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ZERO - Global climate challenges for ZEROheroes">
+
+  <script src="../js/Chart.js"></script>
+
+
+  <title>Home | ZERO</title>
+
+  <!-- Bootstrap -->
+  <link href="../css/styles.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+
+  <body id="top">
+
+    <!--Header-->
+
+
+    <header id="calculatorPage">
+
+      <div class="headerContainer headerContainerOne">
+        <div class="mainContainer headerNavContentCalculator">
+          <nav class="navbar navbar-inverse buttonBorder">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="../index.html"><img src="../images/hp_hd_lg.png" alt="ZERO home" class="logo"></a>
+
+              <button type="button" class="navbar-toggle buttonBorder" data-toggle="collapse" data-target=".navbar-collapse" title="ZERO navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <div class="personalDetails">
+
+                <ul class="navListOrder">
+                  <li><a href="#" class="topNavLinks" title="Manage my profile">Sign in</a></li>
+                  <li class="active"><a href="#about" class="topNavActive" title="English">EN</a></li>
+                  <li><a href="#contact" class="topNavLinks" title="Español">ES</a></li>
+                  <li><a href="#contact"><img src="../images/hp_hd_sch.png" alt="ZERO search" title="ZERO search"></a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav" role="menu">
+                <li class="active"><a href="../index.html" class="navFont">Home</a></li>
+                <li><a href="../pages/calculator.html" class="navFont">Footprint Calculator</a></li>
+                <li><a href="../pages/challenges.html" class="navFont">Challenges</a></li>
+                <li><a href="#" class="navFont">Challenge Leagues</a></li>
+                <li><a href="#" class="navFont">News</a></li>
+                <li><a href="#" class="navFont">ZEROshop</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="container-fluid">
+
+              <!--Header main content-->
+            <div class="headerImageContainer">
+
+              <div class="row">
+
+                <div class="col-sm-6 col-sm-push-6 col-xs-12">
+                  <div>
+                    <div class="hpHeaderOne"><h1>So you want to be a ZEROhero?</h1></div>
+                    <div class="hpHeaderTwo"><h2>Let's find out if you've got what it takes</h2></div>
+                    <div class="hpHeaderThree"><h3>What are you going to do about it?</h3></div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-sm-pull-6 col-xs-12">
+                   <div class="heroImage">
+                     <img src="../images/ch_chal_bf.png" alt="Let's calculate your footprint" class="img-responsive center-block">
+                   </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+
+    <!--Section 1-->
+
+
+    <div class="headerContainer headerContainerTwo">
+
+      <div class="mainContainer headerNavContentFour">
+        <div class="container-fluid">
+
+          <div class="sliderWrapper">
+
+            <div class="row">
+
+              <div class="col-md-10 col-md-offset-2 col-xs-12">
+
+            <!--Homepage section 1-->
+
+                <div><h4 class="sectionTitle sectionTitleChallenge">Let's take the ZEROhero entrance test</h4></div>
+                <div class="sliderQuestion"><h2>How many times per week do you charge your phone?</h2></div>
+                <div class="sliderQuestionHolder">
+                  <div class="sliderHolder">
+                     <input class="sliderRange" id="range1" type="range" min="0" max="20" step="1" value="0">
+                  </div>
+                  <div class="valueHolder sliderValueContainer" id="value1">0</div>
+                </div>
+
+                <div>
+                  <div class="sliderQuestion"><h2>How many hours per week do you spend on your Xbox or Playstation?</h2></div>
+                  <div class="sliderHolder">
+                    <input class="sliderRange" id="range2" type="range" min="0" max="40" step="1" value="0">
+                  </div>
+                  <div class="valueHolder sliderValueContainer" id="value2">0</div>
+                </div>
+
+                <div>
+                  <div class="sliderQuestion"><h2>How many times per month do you recycle plastic bottles?</h2></div>
+                  <div class="sliderHolder">
+                    <input class="sliderRange" id="range3" type="range" min="0" max="20" step="1" value="0">
+                  </div>
+                  <div class="valueHolder sliderValueContainer" id="value3">0</div>
+                </div>
+
+                <div>
+                  <div class="sliderQuestion"><h2>How many times per month would you take the bus or train?</h2></div>
+                  <div class="sliderHolder">
+                    <input class="sliderRange" id="range4" type="range" min="0" max="50" step="1" value="0">
+                  </div>
+                  <div class="valueHolder sliderValueContainer" id="value4">0</div>
+                </div>
+
+                <div>
+                  <div class="sliderQuestion"><h2>How many times per month do you think about climate change?</h2></div>
+                  <div class="sliderHolder">
+                    <input class="sliderRange" id="range5" type="range" min="0" max="20" step="1" value="0">
+                  </div>
+                  <div class="valueHolder sliderValueContainer" id="value5">0</div>
+                </div>
+
+                <div class="calculateHeader"><h2 class="sectionTitleChallenge">Are you a ZEROhero or a climate villain?</h2></div>
+
+              </div>
+            </div>
+
+            <div class="calculateButtonContainer">
+              <button class="hpHeaderBtn center-b" id="calculateFootPrint">TELL ME THE RESULTS</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+<!--Results section-->
+
+
+    <div id="resultsWrapperContainer">
+
+    <div class="headerContainer headerContainerTwo">
+      <div class="mainContainer headerNavContentFour">
+        <div class="container-fluid">
+
+          <div class="headerNavThree clearfix">
+
+
+            <div class="row">
+              <section class="clearfix sectionResults">
+                <div class="col-sm-5 col-sm-push-7 col-xs-12">
+                  <div class="resultsOne">Your carbon footprint is...</div>
+                  <div class="resultsTwo">Gigantic!</div>
+                  <div class="resultsThree">You are a real climate villain.</div>
+                  <div class="resultsSeparator">
+                    <div class="resultsFour">Do you really want to become a climate hero?</div>
+                    <div class="resultsFour">Have you got want it takes?</div>
+                  </div>
+                  <div class="resultsSeparator">
+                    <div class="resultsFive">Ok, we challenge you to prove it...</div>
+                    <div class="resultsFive">Sign up and join our climate challenges.</div>
+                  </div>
+                </div>
+
+                <div class="col-sm-7 col-sm-pull-5 col-xs-12">
+                  <div>
+                    <img src="../images/ch_ch_result.png" class="img-responsive" alt="Bigfoot results">
+                  </div>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--Registration Section-->
+
+
+    <div class="headerContainer headerContainerTwo">
+
+      <div class="mainContainer headerNavContentFour">
+        <div class="container-fluid">
+
+          <div class="signinWrapper">
+
+            <div class="row">
+
+
+                <form id="myForm" action="challenges.html">
+
+              <div class="col-md-10 col-md-offset-2 col-xs-12">
+
+                <!--Homepage section 1-->
+
+
+
+                  <div><h4 class="sectionTitle sectionTitleChallenge">Sign me up</h4></div>
+
+                <fieldset class="fieldsetCalc">
+
+                      <div class="formListColumns formSignup">
+                        <div class="form-group">
+                          <label for="firstName" class="title titleTwo">First name:</label>
+                          <input type="text" name="name" id="firstName" autocomplete="off" class="form-control" required placeholder="First name" />
+                        </div>
+                        <div class="form-group">
+                          <label for="lastName" class="title titleTwo">Last name:</label>
+                          <input type="text" name="description" id="lastName" autocomplete="off" class="form-control" required placeholder="Last name" />
+                        </div>
+                        <div class="form-group">
+                          <label for="emailCalc" class="title titleTwo">Email:</label>
+                          <input type="email" name="description" id="emailCalc" autocomplete="off" class="form-control" required placeholder="Email" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="dateOfBirth" class="titleDate titleTwo">Date of Birth : </label>
+                          <input name="dateOfBith" id="dateOfBirth" type="date" required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="checkbox" name="terms" id="terms" class="checkBoxStyle" title="Don't miss your chance to become a ZEROhero" required/> <label for="terms" class="signUpTC">I have read the <a href="#" class="termConditions">terms and conditions</a></label>
+                        </div>
+                      </div>
+
+                    </fieldset>
+
+
+              </div>
+                <div class="calculateButtonContainer">
+                  <button class="hpHeaderBtn center-b" id="regButton">I'M READY TO SAVE THE WORLD</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <!--Section 3-->
+
+    <div class="headerContainer headerContainerTwo">
+      <div class="mainContainer headerNavContentFour">
+        <div class="container-fluid">
+
+          <div class="headerNavThree clearfix">
+
+
+            <div class="row">
+              <section>
+                <div class="col-sm-6">
+                  <div>
+                    <h4 class="sectionTitleDark">SHARE AT ZEROcommunity</h4>
+                  </div>
+
+                  <div class="socialMediaContainer center-block">
+                   <div class="mediaContainer">
+                     <div class="mediaImage"><img src="../images/sm_f.png" alt="facebook"></div>
+                       <div class="mediaNumberContainer">
+                         <div class="mediaNumber">82k</div>
+                         <div class="mediaFollow"><a href="#" class="mediaText">follow&nbsp;<img src="../images/md_pls.png" alt="Follow on facebook"></a></div>
+                       </div>
+                   </div>
+
+                    <div class="mediaContainer mediaContainerTwo">
+                      <div class="mediaImage"><img src="../images/sm_t.png" alt="twitter"></div>
+                      <div class="mediaNumberContainer">
+                        <div class="mediaNumber">25k</div>
+                        <div class="mediaFollow"><a href="#" class="mediaText">follow&nbsp;<img src="../images/md_pls.png" alt="Follow on facebook"></a></div>
+                      </div>
+                    </div>
+
+                    <div class="mediaContainer mediaContainerThree">
+                      <div class="mediaImage"><img src="../images/sm_g.png" alt="google+"></div>
+                      <div class="mediaNumberContainer">
+                        <div class="mediaNumber">15k</div>
+                        <div class="mediaFollow"><a href="#" class="mediaText">follow&nbsp;<img src="../images/md_pls.png" alt="Follow on facebook"></a></div>
+                      </div>
+                    </div>
+
+                    <div class="mediaContainer mediaContainerFour">
+                      <div class="mediaImage"><img src="../images/sm_v.png" alt="vimeo"></div>
+                      <div class="mediaNumberContainer">
+                        <div class="mediaNumber">10k</div>
+                        <div class="mediaFollow"><a href="#" class="mediaText">follow&nbsp;<img src="../images/md_pls.png" alt="Follow on facebook"></a></div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div>
+                    <h4 class="sectionTitleDark">SUBSCRIBE TO ZEROnews</h4>
+                  </div>
+                  <div>
+                    <div>
+                      <p>Latest news and opinion in our ZEROnews monthly newsletter</p>
+                    </div>
+                    <form action="calculator.html">
+                      <div>
+                        <div>
+                          <label for="email" class="hideEmailLabel">
+                            <span>Your email address</span>
+                          </label>
+                          <input class="emailformInput" type="email" name="email" id="email" placeholder="Your email address" required/>
+                          <button type="submit" class="emailformButton">JOIN</button>
+                        </div>
+                      </div>
+                      <div><span class="eamilSubscribeText">No spam ever. Unsubscribe in one click.</span></div>
+                    </form>
+                  </div>
+
+                </div>
+                <div class="mediaIconHolder clearfix">
+                  <div class="clearfix">&nbsp;</div>
+
+                </div>
+              </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+    <!--Footer Container-->
+    <footer>
+      <div class="footerContainer2">
+
+        <!--Section 2: Footer-->
+        <div class="mainContainer footerNavBottomContent">
+        <div class="container-fluid">
+
+            <div class="row">
+              <div class="footerSpacer">
+                <div class="col-sm-12">
+
+                  <nav class="sponsorListContainer">
+                    <ul class="sponsorList">
+                      <li><a href="#"><img src="../images/ft_cx.png" alt="Cemex logo" title="Cemex"></a></li>
+                      <li><a href="#"><img src="../images/ft_ex.png" alt="Exxon logo" title="Exxon"></a></li>
+                      <li><a href="#"><img src="../images/ft_ta.png" alt="TATA logo" title="TATA"></a></li>
+                      <li><a href="#"><img src="../images/ft_fd.png" alt="Ford logo" title="Ford"></a></li>
+                      <li><a href="#"><img src="../images/ft_cp.png" alt="Copa Airlines logo" title="Copa Airlines"></a></li>
+                      <li><a href="#"><img src="../images/ft_sb.png" alt="Starbucks logo" title="Starbucks"></a></li>
+                      <li><a href="#"><img src="../images/ft_lt.png" alt="Lufthansa logo" title="Lufthansa"></a></li>
+                      <li><a href="#"><img src="../images/ft_nt.png" alt="Nintendo logo" title="Nintendo"></a></li>
+
+                    </ul>
+                  </nav>
+
+                  <div>
+                    <div class="footerHero"><img src="../images/ft_hero.png" alt="ZERO hero"></div>
+                  </div>
+
+
+                  <!--Footer external links-->
+                  <div>
+                    <div class="footerNavHolder">
+                      <ul class="unstyledListFooter">
+                        <li><a href="#" class="footerLinks">home</a></li>
+                        <li><a href="#" class="footerLinks">ZERO challenges</a></li>
+                        <li><a href="#" class="footerLinks">ZERO leagues</a></li>
+                        <li><a href="#" class="footerLinks">ZERO news</a></li>
+                        <li><a href="#" class="footerLinks">ZERO shop</a></li>
+                        <li><a href="#" class="footerLinks">sponsors portal</a></li>
+                        <li><a href="#" class="footerLinks">investor news</a></li>
+                        <li><a href="#" class="footerLinks">sitemap</a></li>
+                        <li><a href="#" class="footerLinks">contact us</a></li>
+                        <li><a href="#" class="footerLinks">about us</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="ftLogoHolder">
+                      <div class="ftLogo"><a href="../index.html"><img src="../images/hp_hd_lg.png" alt="ZERO home" class="logo"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="copyrightContainer">
+              <div><span class="copyRight">© 2016 ZERO</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </body>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+
+</html>

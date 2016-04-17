@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<!--
+* Author: Dermott McElhone
+*  Assignment:  Minor Project
+*  Student  ID: D15126568
+*  Date: 2016/04/11
+-->
+
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ZERO - Global climate challenges for ZEROheroes">
+  <title>Home | ZERO</title>
+
+  <!-- Bootstrap -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+
+  <body id="top">
+
+    <!--Header-->
+
+
+    <header id="indexPage">
+
+      <div class="headerContainer headerContainerOne">
+        <div class="mainContainer headerNavContentOne">
+          <nav class="navbar navbar-inverse buttonBorder">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><img src="images/hp_hd_lg.png" alt="ZERO home" class="logo"></a>
+
+              <button type="button" class="navbar-toggle buttonBorder" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <div class="personalDetails">
+
+                <ul class="navListOrder">
+                  <li><a href="#" class="topNavLinks">Sign in</a></li>
+                  <li class="active"><a href="#" class="topNavActive" title="English">EN</a></li>
+                  <li><a href="index_es.html" class="topNavLinks" title="Español">ES</a></li>
+                  <li><a href="#"><img src="images/hp_hd_sch.png" alt="ZERO search" title="ZERO search"></a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="index.html" class="navFont">Home</a></li>
+                <li><a href="pages/calculator.html" class="navFont">Footprint Calculator</a></li>
+                <li><a href="pages/challenges.html" class="navFont">Challenges</a></li>
+                <li><a href="#" class="navFont">Challenge Leagues</a></li>
+                <li><a href="#" class="navFont">News</a></li>
+                <li><a href="#" class="navFont">ZEROshop</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="container-fluid">
+
+              <!--Header main content-->
+            <div class="headerImageContainer">
+
+              <div class="row">
+
+                <div class="col-sm-6 col-sm-push-6 col-xs-12">
+                  <div>
+                    <div class="hpHeaderOne"><h1>Are you a <span>ZEROhero?</span></h1></div>
+                    <div class="hpHeaderTwo"><h2>Global climate challenges for heroes</h2></div>
+                    <div class="hpHeaderThree"><h3>First we need to calculate your footprint</h3></div>
+                    <div class="hpBtnHolder"><button onClick="clickMeTwo()" class="hpHeaderBtn" id="calcButton"><span class="hiddenTitle">LET'S </span>GET STARTED</button></div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-sm-pull-6 col-xs-12">
+                   <div class="heroImage">
+                     <img src="images/hp_hd_hero.png" alt="Alexa ZEROhero" class="img-responsive center-block">
+                   </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+
+    <!--Section 1-->
+
+
+    <div class="headerContainer headerContainerTwo">
+
+      <div class="mainContainer headerNavContentTwo">
+        <div class="container-fluid">
+
+
+        <!--Homepage section 1-->
+
+          <div><h4 class="sectionTitle">CHALLENGES</h4></div>
+
+        <div class="carouselHolder">
+
+          <!--Carousel-->
+
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+           <!-- Indicators -->
+           <ol class="carousel-indicators">
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="#myCarousel" data-slide-to="1"></li>
+             <li data-target="#myCarousel" data-slide-to="2"></li>
+             <li data-target="#myCarousel" data-slide-to="3"></li>
+             <li data-target="#myCarousel" data-slide-to="4"></li>
+           </ol>
+           <div class="carousel-inner" role="listbox">
+             <div class="item active">
+               <img class="first-slide imgOpacity" src="images/caro_tree.png" alt="Sponsored by Lufthansa">
+               <div class="carousel-caption">
+                 <h1 class="carouselHeader">Are you a tree hugger or tree mugger?</h1>
+                 <p class="carouselParaOne">We need you to plant 5 trees per week, can you do it?</p>
+                 <p><button onClick="challengeButtonClick()" class="hpHeaderBtn challengeBTN">JOIN CHALLENGE</button></p>
+               </div>
+             </div>
+             <div class="item">
+               <img class="second-slide imgOpacity" src="images/challenge_2.png" alt="Sponsored by Ford">
+               <div class="carousel-caption">
+                 <h1 class="carouselHeader">Recycle warrior or throw away villian?</h1>
+                 <p class="carouselParaOne">How many plastic bottles can you recycle in a week?</p>
+                 <p><button onClick="challengeButtonClick()" class="hpHeaderBtn challengeBTN">JOIN CHALLENGE</button></p>
+               </div>
+             </div>
+             <div class="item">
+               <img class="third-slide imgOpacity" src="images/caro_fuel.png" alt="Sponsored by Nintendo">
+               <div class="carousel-caption">
+                 <h1 class="carouselHeader">Are you a fuel hero or zero?</h1>
+                 <p class="carouselParaOne">It's time to drop the car and jump on the bus or train</p>
+                 <p><button onClick="challengeButtonClick()" class="hpHeaderBtn challengeBTN">JOIN CHALLENGE</button></p>
+               </div>
+             </div>
+             <div class="item">
+               <img class="third-slide imgOpacity" src="images/caro_hh.png" alt="Sponsored by Vinci">
+               <div class="carousel-caption">
+                 <h1 class="carouselHeader">Are you a friend or foe?</h1>
+                 <p class="carouselParaOne">Let's create some homes for our little friends</p>
+                 <p><button onClick="challengeButtonClick()" class="hpHeaderBtn challengeBTN">JOIN CHALLENGE</button></p>
+               </div>
+             </div>
+             <div class="item">
+               <img class="third-slide imgOpacity" src="images/caro_dis.png" alt="Sponsored by Disney">
+               <div class="carousel-caption">
+                 <h1 class="carouselHeader">Let's banish that beach trash.</h1>
+                 <p class="carouselParaOne">Call on your friends to collect that rubbish, can you do it?</p>
+                 <p><button onClick="challengeButtonClick()" class="hpHeaderBtn challengeBTN">JOIN CHALLENGE</button></p>
+               </div>
+             </div>
+           </div>
+           <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
+
+         </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Section 2-->
+
+    <div class="headerContainer headerContainerThree">
+      <div class="mainContainer headerNavContentThree">
+       <div class="container-fluid">
+
+          <div class="row">
+            <section>
+              <div class="col-sm-6">
+                <div>
+                  <h4 class="sectionTitle">NEWS</h4>
+                </div>
+                <article class="articleNews clearfix">
+                  <div class="newsItemImage clearfix">
+                    <img src="images/ns_im_1.png" alt="News Image">
+                  </div>
+                  <div class="newsItemContainer">
+                    <div><h5 class="newsItemHeader">Rising sea levels impact millions</h5></div>
+                    <div><p class="newsItemText">By 2030, the sea level is predicted to rise by 50cms. 300 million people will be displaced.</p></div>
+                    <div><a href="#" class="newsItemLink">Read more</a></div>
+                  </div>
+                </article>
+                <article class="articleNews clearfix">
+                  <div class="newsItemImage clearfix">
+                    <img src="images/ns_im_1b.png" alt="News Image">
+                  </div>
+                  <div class="newsItemContainer">
+                    <div><h5 class="newsItemHeader">10 ways why trees are our best friends</h5></div>
+                    <div><p class="newsItemText">There's just too much carbon dioxide and trees just love to CO2.</p></div>
+                    <div><a href="#" class="newsItemLink">Read more</a></div>
+                  </div>
+                </article>
+                <article class="articleNews clearfix">
+                  <div class="newsItemImage clearfix">
+                    <img src="images/ns_im_1c.png" alt="News Image">
+                  </div>
+                  <div class="newsItemContainer">
+                    <div><h5 class="newsItemHeader">What's an iceberg daddy?</h5></div>
+                    <div><p class="newsItemText">In our children's lifetime it's entirely possible that all Artic ice will have melted. It's time to be worried.</p></div>
+                    <div><a href="#" class="newsItemLink">Read more</a></div>
+                  </div>
+                </article>
+
+              </div>
+
+              <div class="col-sm-6">
+                <div>
+                  <h4 class="sectionTitle">DID YOU KNOW?</h4>
+                </div>
+                <article class="articleNews clearfix">
+                  <div class="newsItemContainer">
+                    <div><h5 class="newsItemHeader">Countries with the largest deforestation in 2015</h5></div>
+                    <div class="infograpHolder">
+                       <img src="images/ns_im_5.png" class="img-responsive center-block" alt="Brazil 30%, Argentian 50%, Thailand 50%">
+                    </div>
+                  </div>
+                </article>
+
+                <article class="articleNews clearfix">
+                  <div class="newsItemContainer">
+                    <div><h5 class="newsItemHeader">Largest CO2 producers in 2015</h5></div>
+                    <div class="infograpHolder">
+                      <img src="images/ns_im_6.png" class="img-responsive center-block" alt="USA 81%, India 56%, China 30%">
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+              <div class="mediaIconHolder clearfix">
+                <div class="clearfix">
+                  <div class="mediaIcon"><a href="#"><img src="images/icon_fb.png" alt="facebook" title="Facebook"></a></div>
+                  <div class="mediaIcon"><a href="#"><img src="images/icon_tw.png" alt="twitter" title="Twitter"></a></div>
+                </div>
+
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Section 3-->
+
+    <div class="headerContainer headerContainerThree">
+      <div class="mainContainer headerNavContentFour">
+        <div class="container-fluid">
+
+          <div class="headerNavThree clearfix">
+
+
+            <div class="row">
+              <section class="sectionShop">
+                <div class="col-md-3 col-sm-5 col-xs-5">
+                  <div>
+                    <a href="#"><img src="images/hp_sh_hero.png" alt="Hero image" class="img-responsive center-block"></a>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-7 col-xs-7">
+                  <a href="#"><img src="images/hp_sh_wear.png" alt="Zero wearable image" class="img-responsive center-block"></a>
+                </div>
+
+                <div class="col-md-5  hidden-sm hidden-xs">
+                  <a href="#"><img src="images/hp_sh_bdg.png" alt="Zero Badges image" class="img-responsive center-block"></a>
+                </div>
+
+                <div class="clearfix">
+                  <div class="shopButtonHolder">
+                    <div class="shopButtonHolder"><button class="hpHeaderBtn">ZERO SHOPPING</button></div></div>
+                </div>
+
+                <div class="mediaIconHolder clearfix">
+                  <div class="clearfix">
+                    <div class="mediaIcon"><a href="#"><img src="images/icon_fb.png" alt="facebook" title="Facebook"></a></div>
+                    <div class="mediaIcon"><a href="#"><img src="images/icon_tw.png" alt="twitter" title="Twitter"></a></div>
+                  </div>
+
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Section 4-->
+
+    <div class="headerContainer headerContainerTwo">
+      <div class="mainContainer headerNavContentFive">
+        <div class="container-fluid">
+
+
+          <div class="row">
+            <section>
+              <div class="col-sm-6">
+                <div>
+                  <h4 class="sectionTitle">THE ZEROHERO LEAGUE</h4>
+                </div>
+                <article class="articleNews clearfix">
+                  <div class="leagueContainer">
+                    <a href="#"><img src="images/zr_leag.png" class="img-responsive center-block" alt="Zerohero League" title="View all the latest ZEROhero leagues"></a>
+                  </div>
+                </article>
+
+              </div>
+
+              <div class="col-sm-6">
+                <div>
+                  <h4 class="sectionTitle">WORLD ZEROHERO TEAM LEADER BOARD</h4>
+                </div>
+
+                <div class="articleContainer">
+
+                  <article class="articleZERO clearfix">
+                    <div class="zeroNumber">1</div>
+                     <div class="zeroItemImage clearfix">
+                      <img src="images/zr_leag_fc_1.png" class="img-responsive" alt="ZEROhero league image">
+                    </div>
+                    <div class="zeroItemContainer">
+                      <div><h5 class="zeroItemHeaderText">Team Morphos</h5></div>
+                      <div><p class="zeroItemText">Europe</p></div>
+                    </div>
+                  </article>
+
+                  <article class="articleZERO clearfix">
+                    <div class="zeroNumber">2</div>
+                    <div class="zeroItemImage clearfix">
+                      <img src="images/zr_leag_fc_2.png" class="img-responsive" alt="ZEROhero league image">
+                    </div>
+                    <div class="zeroItemContainer">
+                      <div><h5 class="zeroItemHeaderText">Team Cantu</h5></div>
+                      <div><p class="zeroItemText">South America</p></div>
+                    </div>
+                  </article>
+
+                  <article class="articleZERO clearfix">
+                    <div class="zeroNumber">3</div>
+                    <div class="zeroItemImage clearfix">
+                      <img src="images/zr_leag_fc_3.png" class="img-responsive" alt="ZEROhero league image">
+                    </div>
+                    <div class="zeroItemContainer">
+                      <div><h5 class="zeroItemHeaderText">Team Mooney</h5></div>
+                      <div><p class="zeroItemText">North America</p></div>
+                    </div>
+                  </article>
+
+                  <article class="articleZERO clearfix">
+                    <div class="zeroNumber">4</div>
+                    <div class="zeroItemImage clearfix">
+                      <img src="images/zr_leag_fc_4.png" class="img-responsive" alt="ZEROhero league image">
+                    </div>
+                    <div class="zeroItemContainer">
+                      <div><h5 class="zeroItemHeaderText">Team Casique</h5></div>
+                      <div><p class="zeroItemText">Venezuela</p></div>
+                    </div>
+                  </article>
+
+                  <article class="articleZERO clearfix">
+                    <div class="zeroNumber">5</div>
+                    <div class="zeroItemImage clearfix">
+                      <img src="images/zr_leag_fc_5.png" class="img-responsive" alt="ZEROhero league image">
+                    </div>
+                    <div class="zeroItemContainer">
+                      <div><h5 class="zeroItemHeaderText">Team Espinosa</h5></div>
+                      <div><p class="zeroItemText">Europe</p></div>
+                    </div>
+                  </article>
+
+                  <article class="articleZERO clearfix">
+                    <div class="zeroNumber">6</div>
+                    <div class="zeroItemImage clearfix">
+                      <img src="images/zr_leag_fc_6.png" class="img-responsive" alt="ZEROhero league image">
+                    </div>
+                    <div class="zeroItemContainer">
+                      <div><h5 class="zeroItemHeaderText">Team Trump</h5></div>
+                      <div><p class="zeroItemText">Europe</p></div>
+                    </div>
+                  </article>
+                </div>
+                <div class="moreLeaguesHolder"><a href="#" class="moreLeagues">More leagues</a></div>
+
+              </div>
+              <div class="mediaIconHolder clearfix">
+                <div class="clearfix">
+                  <div class="mediaIcon"><a href="#"><img src="images/icon_fb.png" alt="facebook" title="Facebook"></a></div>
+                  <div class="mediaIcon"><a href="#"><img src="images/icon_tw.png" alt="twitter" title="Twitter"></a></div>
+                </div>
+
+              </div>
+            </section>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Section 5-->
+
+    <div class="headerContainer headerContainerTwo">
+      <div class="mainContainer headerNavContentFour">
+        <div class="container-fluid">
+
+          <div class="headerNavThree clearfix">
+
+
+            <div class="row">
+              <section>
+                <div class="col-sm-6">
+                  <div>
+                    <h4 class="sectionTitleDark">SHARE AT ZEROcommunity</h4>
+                  </div>
+
+                  <div class="socialMediaContainer center-block">
+                   <div class="mediaContainer">
+                     <div class="mediaImage"><img src="images/sm_f.png" alt="facebook"></div>
+                       <div class="mediaNumberContainer">
+                         <div class="mediaNumber">82k</div>
+                         <div class="mediaFollow"><a href="#" class="mediaText">follow&nbsp;<img src="images/md_pls.png" alt="Follow on facebook"></a></div>
+                       </div>
+                   </div>
+
+                    <div class="mediaContainer mediaContainerTwo">
+                      <div class="mediaImage"><img src="images/sm_t.png" alt="twitter"></div>
+                      <div class="mediaNumberContainer">
+                        <div class="mediaNumber">25k</div>
+                        <div class="mediaFollow"><a href="#" class="mediaText">follow&nbsp;<img src="images/md_pls.png" alt="Follow on facebook"></a></div>
+                      </div>
+                    </div>
+
+                    <div class="mediaContainer mediaContainerThree">
+                      <div class="mediaImage"><img src="images/sm_g.png" alt="google+"></div>
+                      <div class="mediaNumberContainer">
+                        <div class="mediaNumber">15k</div>
+                        <div class="mediaFollow"><a href="#" class="mediaText">follow&nbsp;<img src="images/md_pls.png" alt="Follow on facebook"></a></div>
+                      </div>
+                    </div>
+
+                    <div class="mediaContainer mediaContainerFour">
+                      <div class="mediaImage"><img src="images/sm_v.png" alt="vimeo"></div>
+                      <div class="mediaNumberContainer">
+                        <div class="mediaNumber">10k</div>
+                        <div class="mediaFollow"><a href="#" class="mediaText">follow&nbsp;<img src="images/md_pls.png" alt="Follow on facebook"></a></div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div>
+                    <h4 class="sectionTitleDark">SUBSCRIBE TO ZEROnews</h4>
+                  </div>
+                  <div>
+                    <div>
+                      <p>Latest news and opinion in our ZEROnews monthly newsletter</p>
+                    </div>
+                    <form action="index.html">
+                      <div>
+                        <div>
+                          <label for="email" class="hideEmailLabel">
+                            <span>Your email address</span>
+                          </label>
+                          <input class="emailformInput" type="email" name="email" id="email" placeholder="Your email address" required/>
+                          <button type="submit" class="emailformButton">JOIN</button>
+                        </div>
+                      </div>
+                      <div><span class="eamilSubscribeText">No spam ever. Unsubscribe in one click.</span></div>
+                    </form>
+                  </div>
+                </div>
+                <div class="mediaIconHolder clearfix">
+                  <div class="clearfix">&nbsp;</div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Footer Container-->
+    <footer>
+      <div class="footerContainer2">
+
+        <!--Section 2: Footer-->
+        <div class="mainContainer footerNavBottomContent">
+        <div class="container-fluid">
+
+            <div class="row">
+              <div class="footerSpacer">
+                <div class="col-sm-12">
+
+                  <nav class="sponsorListContainer">
+                    <ul class="sponsorList">
+                      <li><a href="#"><img src="images/ft_cx.png" alt="Cemex logo" title="Cemex"></a></li>
+                      <li><a href="#"><img src="images/ft_ex.png" alt="Exxon logo" title="Exxon"></a></li>
+                      <li><a href="#"><img src="images/ft_ta.png" alt="TATA logo" title="TATA"></a></li>
+                      <li><a href="#"><img src="images/ft_fd.png" alt="Ford logo" title="Ford"></a></li>
+                      <li><a href="#"><img src="images/ft_cp.png" alt="Copa Airlines logo" title="Copa Airlines"></a></li>
+                      <li><a href="#"><img src="images/ft_sb.png" alt="Starbucks logo" title="Starbucks"></a></li>
+                      <li><a href="#"><img src="images/ft_lt.png" alt="Lufthansa logo" title="Lufthansa"></a></li>
+                      <li><a href="#"><img src="images/ft_nt.png" alt="Nintendo logo" title="Nintendo"></a></li>
+
+                    </ul>
+                  </nav>
+
+                  <div>
+                    <div class="footerHero"><img src="images/ft_hero.png" alt="ZERO hero"></div>
+                  </div>
+
+
+                  <!--Footer external links-->
+                  <div>
+                    <div class="footerNavHolder">
+                      <ul class="unstyledListFooter">
+                        <li><a href="#" class="footerLinks">home</a></li>
+                        <li><a href="#" class="footerLinks">ZERO challenges</a></li>
+                        <li><a href="#" class="footerLinks">ZERO leagues</a></li>
+                        <li><a href="#" class="footerLinks">ZERO news</a></li>
+                        <li><a href="#" class="footerLinks">ZERO shop</a></li>
+                        <li><a href="#" class="footerLinks">sponsors portal</a></li>
+                        <li><a href="#" class="footerLinks">investor news</a></li>
+                        <li><a href="#" class="footerLinks">sitemap</a></li>
+                        <li><a href="#" class="footerLinks">contact us</a></li>
+                        <li><a href="#" class="footerLinks">about us</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="ftLogoHolder">
+                      <div class="ftLogo"><img src="images/hp_hd_lg.png" alt="ZERO home" class="logo"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="copyrightContainer">
+              <div><span class="copyRight">© 2016 ZERO</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </body>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+</html>
